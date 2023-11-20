@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main>
+        <section class="logo-container">
+            <div class="logo-content">
+                <img src="./images/odin-lined.png" width="80" alt="logo">
+                <h1>ODIN</h1>
+            </div>
+        </section>
+        <section class="form-container">
+            <div class="form-intro">
+                <p>
+
+                    This is not a real online service! You know you need something like this in your life to help you
+                    realize your deepest dreams.
+                    <br>
+                    Sign up <em>now</em> to get started.
+                </p>
+                <p>
+                    You <em>know</em> you want to.
+                </p>
+            </div>
+            <form action="/" method="post">
+                <div class="form-content">
+                    <h2>Let's do this!</h2>
+                    <div class="inputs-container">
+                        <div class="input-container">
+                            <label for="fname">First name</label>
+                            <input type="text" name="fname" id="fname" required>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-container">
+                            <label for="lname">Last Name</label>
+                            <input type="text" name="lname" id="lname" required>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-container">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-container">
+                            <label for="phone-number">phone number</label>
+                            <input type="tel" name="phone-number" id="phone-number" required>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-container">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" required>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input-container">
+                            <label for="password-confirm">Confirm password</label>
+                            <input type="password" name="password-confirm" id="password-confirm" required>
+                            <div class="error"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta">
+                    <button class="cta__button">Create account</button>
+                    <p class="cta__login m-0">Already have an account? <span>Log in</span></p>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

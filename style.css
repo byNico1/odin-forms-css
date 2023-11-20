@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@700&family=IBM+Plex+Sans:wght@300;400;700&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+label {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+input {
+  display: block;
+  border-radius: 3px;
+  border: 1px solid #e5e7eb;
+  padding: 6px;
+}
+
+input:focus {
+  outline: 1px solid rgb(0, 98, 255);
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+}
+
+input:invalid,
+.invalid {
+  outline: 1px solid rgb(255, 0, 0);
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+}
+
+main {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 40% auto;
+  overflow: hidden;
+}
+
+.logo-container {
+  background-image: url("./images/bg-image.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+
+.logo-content {
+  margin-top: 30%;
+  padding: 10px 0;
+  background: #0000007c;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 5rem;
+  font-family: "Alegreya", serif;
+  color: white;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.form-container {
+  display: grid;
+  background: #f9fafb;
+  align-items: flex-start;
+}
+
+.inputs-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 70%;
+  gap: 40px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-intro {
+  font-weight: 700;
+  font-size: 1.2rem;
+  align-self: flex-end;
+}
+
+form {
+  align-self: center;
+}
+.form-content {
+  padding: 20px 0 40px 0;
+  background-color: #ffffff;
+  padding-left: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.282);
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.282);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.282);
+}
+
+.cta__button {
+  cursor: pointer;
+  border: none;
+  background-color: #596d48;
+  color: #ffffff;
+  padding: 1em 3em;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+.m-0 {
+  margin: 0;
+}
+
+.form-intro,
+.cta {
+  width: 70%;
+  padding-left: 50px;
+}
+
+span {
+  color: #596d48;
+  font-weight: 700;
+}
+
+.error {
+  color: rgb(255, 51, 51);
+  font-family: sans-serif;
+  font-weight: 500;
+  text-transform: none;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+/* h2 {
+} */
